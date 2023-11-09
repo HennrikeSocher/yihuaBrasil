@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Yihua Brasil</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <script src="https://kit.fontawesome.com/0eaae125cf.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,600,700">
+</head>
+
+<body>
+    <header>
+        <span>Yihua<br>Brasil</span>
+        <div class="navbar">
+            <a href='./index.html' style="text-decoration: underline;"><span><b>inicio</b></span></a>
+            <a href='./sobrenos.html'><span>sobre nos</span></a>
+            <a href='./servicos.html'><span>servicos</span></a>
+            <a href='./contato.html'><span>contato</span></a>
+        </div>
+        <div class="links">
+            <a href='instagram.com'><i class="fa-brands fa-instagram"></i></a>
+            <a href='whatsapp'><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </header>
+    <div class="showcase">
+        <div style="z-index: 10; background-color: #f1f1f1; padding: 1vh; opacity: 0; cursor: pointer; transition: 0.5s;"
+            class="setinha" id="right">
+            <i class="fa-solid fa-chevron-left" style="font-size: 5vh; color: #000;"></i>
+        </div>
+        <div class="images">
+            <img src="./images/banner_1.png" alt='1' id="img1">
+            <img src="./images/2.jpeg" alt='2' style="opacity: 0; position: absolute;" id="img2">
+            <img src="./images/3.jpeg" alt='3' style="opacity: 0; position: absolute;" id="img3">
+            <img src="./images/banner_2.png" alt='4' style="opacity: 0; position: absolute;" id="img4">
+        </div>
+        <div style="z-index: 10; background-color: #f1f1f1; padding: 1vh; opacity: 0; cursor: pointer; transition: 0.5s;"
+            class="setinha" id="left">
+            <i class="fa-solid fa-chevron-right" style="font-size: 5vh; color: #000;"></i>
+        </div>
+    </div>
+    <div class="content">
+        <div>
+            <span style="font-size: 3vh;"><b>Como são os nossos processos?</b></span>
+            <div
+                style="display: flex; flex-direction: row;justify-content: space-between; margin-top: 2vh; color: #000; align-items: center;">
+                <span style="background-color: #fbfbfb; border-radius: 1vh; padding: 1.4vh;">Passo 1</span>
+                <i class="fa-solid fa-arrow-right" style="color: #fff;"></i>
+                <span style="background-color: #fbfbfb; border-radius: 1vh; padding: 1.4vh;">Passo 2</span>
+                <i class="fa-solid fa-arrow-right" style="color: #fff;"></i>
+                <span style="background-color: #fbfbfb; border-radius: 1vh; padding: 1.4vh;">Passo 3</span>
+                <i class="fa-solid fa-arrow-right" style="color: #fff;"></i>
+                <span style="background-color: #fbfbfb; border-radius: 1vh; padding: 1.4vh;">Passo 4</span>
+            </div>
+        </div>
+        <div class="contato" style="border-bottom: 0.1vh solid #fff; margin-top: 10vh;">
+            <span style="font-size: 3vh;"><b>Entre em contato</b></span>
+            <div style="margin-top: 2vh; display: flex; flex-direction: column; gap: 2vw; align-items: center;">
+                <div>
+                    Entre em contato conosco para compra ou exportação de nossos produtos...
+                </div>
+                <div style="display: flex; flex-direction: row; gap: 8vw;">
+                    <div style="display: flex; flex-direction: column; align-items: center;">
+                        Atendimento via E-mail:<br>
+                        <div>
+                            <a href="mailto:teste@gmail.com" target="_blank" rel="noopener noreferrer"><i
+                                    style="margin-right: 1vw;" class="fa-regular fa-envelope"></i></a>
+                            <a href="mailto:teste@gmail.com" target="_blank" rel="noopener noreferrer">
+                                teste@gmail.com
+                            </a>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; align-items: center;">
+                        Atendimento por WhatsApp:<br>
+                        <div>
+                            <a href='https://api.whatsapp.com/send?phone=+5541992157815&amp;text=Ol%C3%A1'
+                                target="_blank" rel="noopener noreferrer"><i style="margin-right: 1vw;"
+                                    class="fa-brands fa-whatsapp"></i></a>
+                            <a href="https://api.whatsapp.com/send?phone=+5541992157815&amp;text=Ol%C3%A1"
+                                target="_blank" rel="noopener noreferrer">+55 41 9 9215-7815</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            style="margin: 4vh; display: flex; flex-direction: column; justify-content: center; width: 80%; align-items: center;">
+            <span>
+                Copyright Bla Bla Bla
+            </span>
+            <span style="font-size: 1.2vh;">
+                Images by <a href="https://www.freepik.com/" target="_blank" rel="noopener noreferrer"
+                    style="color: #fff;">Freepik</a>
+            </span>
+        </div>
+    </div>
+</body>
+<script>
+    $('document').ready(function () {
+        let activeImg = 1;
+        let isMouseOver = false;
+
+        $("#right").on('click', function () {
+            if (activeImg === 1) {
+                $("#img1").css({ "position": "absolute", "opacity": "0" })
+                $("#img2").css({ "position": "relative", "opacity": "1" })
+                activeImg = 2
+
+            } else if (activeImg === 2) {
+                $("#img2").css({ "position": "absolute", "opacity": "0" })
+                $("#img3").css({ "position": "relative", "opacity": "1" })
+                activeImg = 3
+
+            } else if (activeImg === 3) {
+                $("#img3").css({ "position": "absolute", "opacity": "0" })
+                $("#img4").css({ "position": "relative", "opacity": "1" })
+                activeImg = 4
+
+            } else if (activeImg === 4) {
+                $("#img4").css({ "position": "absolute", "opacity": "0" })
+                $("#img1").css({ "position": "relative", "opacity": "1" })
+                activeImg = 1
+            }
+        })
+
+        $("#left").on('click', function () {
+            if (activeImg === 1) {
+                $("#img1").css({ "position": "absolute", "opacity": "0" })
+                $("#img4").css({ "position": "relative", "opacity": "1" })
+                activeImg = 4
+
+            } else if (activeImg === 2) {
+                $("#img2").css({ "position": "absolute", "opacity": "0" })
+                $("#img1").css({ "position": "relative", "opacity": "1" })
+                activeImg = 1
+
+            } else if (activeImg === 3) {
+                $("#img3").css({ "position": "absolute", "opacity": "0" })
+                $("#img2").css({ "position": "relative", "opacity": "1" })
+                activeImg = 2
+
+            } else if (activeImg === 4) {
+                $("#img4").css({ "position": "absolute", "opacity": "0" })
+                $("#img3").css({ "position": "relative", "opacity": "1" })
+                activeImg = 3
+            }
+        })
+
+        $('.showcase').on('mouseover', function () {
+            $(".setinha").css("opacity", "1")
+            isMouseOver = true
+        })
+
+        $('.showcase').on('mouseout', function () {
+            $(".setinha").css("opacity", "0")
+            isMouseOver = false
+        })
+
+        let i = 1;
+
+        setInterval(() => {
+            if (isMouseOver === false) {
+                if (i < 4) {
+                    $("#img" + i + "").css({ "position": "absolute", "opacity": "0" })
+                    $("#img" + (i + 1) + "").css({ "position": "relative", "opacity": "1" })
+                    i = i + 1
+                } else if (i === 4) {
+                    i = 1
+                    $("#img4").css({ "position": "absolute", "opacity": "0" })
+                    $("#img1").css({ "position": "relative", "opacity": "1" })
+                }
+            }
+        }, 3000)
+
+    })
+</script>
+
+</html>
