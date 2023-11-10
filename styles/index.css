@@ -150,3 +150,113 @@ header .links {
     border-radius: 2vh;
     display: flex;
 }
+
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+
+  .product {
+    width: 300px;
+    margin: 20px;
+    padding: 15px;
+    background-color: #161616;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .product h2 {
+    color: #fff;
+    margin-top: 10px;
+    font-size: 1.5rem;
+  }
+
+  .product p {
+    margin-top: 10px;
+    color: #636363;
+  }
+
+
+.about-us {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #151515;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5vh;
+}
+
+.about-us h2 {
+    color: #333;
+}
+
+.about-us h3 {
+    color: #555;
+}
+
+.about-us p {
+    color: #777;
+}
+
+.about-us ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-us li {
+    margin-bottom: 5px;
+}
+
+.main-container {
+    background-color: #151515;
+    margin-top: 8vh;
+    padding: 20px;
+    border-radius: 0 0 4.4vh 4.4vh;
+    box-shadow: 0.4vh 0.4vh 0.4vh #00000040;
+}
+
+.main-container h2 {
+    color: #fff;
+}
+
+.main-container p {
+    color: #fff;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-size: 1.5rem;
+}
+
+form input,
+form textarea {
+    display: flex;
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #fff;
+    background-color: #151515;
+    color: #fff;
+}
+
+form button {
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
