@@ -67,6 +67,19 @@ header .links {
     gap: 1vw;
 }
 
+header .links a {
+    border: 0.1vh solid #fff;
+    border-radius: 4vh;
+
+    padding: 1vh 1vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+}
+
 .content {
     width: 90%;
 
@@ -135,12 +148,8 @@ header .links {
 }
 
 .headerIcon {
-    position: relative;
     font-size: 2.3vh;
     display: flex;
-    left: 0.65vh;
-    top: 0.6vh;
-    
 }
 
 .circle-link {
