@@ -161,37 +161,64 @@ header .links a {
 }
 
 
+.img-produto {
+
+    max-height: 220px;
+}
+
+.products {
+    max-width: 1600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #151515;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5vh;
+}
+
+.products h2 {
+    color: #fff;
+}
+
+.products h3 {
+    color: #555;
+}
+
+.products p {
+    color: #777;
+}
+
 .product-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 20px;
-  }
+}
 
-  .product {
+.product {
     width: 300px;
     margin: 20px;
     padding: 15px;
-    background-color: #161616;
+    background-color: #262626;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
+    border-radius: 2vh;
+}
 
-  .product img {
+.product img {
     width: 100%;
     height: auto;
     border-radius: 8px;
-  }
+}
 
-  .product h2 {
+.product h3 {
     color: #fff;
     margin-top: 10px;
     font-size: 1.5rem;
-  }
+}
 
-  .product p {
+.product p {
     margin-top: 10px;
     color: #636363;
-  }
+}
 
 
 .about-us {
@@ -204,15 +231,15 @@ header .links a {
 }
 
 .about-us h2 {
-    color: #333;
+    color: #FFF;
 }
 
 .about-us h3 {
-    color: #555;
+    color: #909090;
 }
 
 .about-us p {
-    color: #777;
+    color: #585858;
 }
 
 .about-us ul {
@@ -222,6 +249,7 @@ header .links a {
 
 .about-us li {
     margin-bottom: 5px;
+    color: #585858;
 }
 
 .main-container {
@@ -240,6 +268,23 @@ header .links a {
     color: #fff;
 }
 
+.contact {
+    max-width: 1500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #151515;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5vh;
+}
+
+.contact h2 {
+    color: #fff;
+}
+
+.contact p {
+    color: #777;
+}
+
 .form-container {
     display: flex;
     flex-direction: column;
@@ -252,8 +297,7 @@ form label {
 
 form input,
 form textarea {
-    display: flex;
-    width: 50%;
+    width: 95%;
     padding: 10px;
     border: 1px solid #fff;
     background-color: #151515;
@@ -267,5 +311,61 @@ form button {
     border: none;
     cursor: pointer;
     font-size: 1.5rem;
-    border-radius: 5px;
+    border-radius: 2vh;
+    position: relative;
+    left: 40vw;
+}
+
+.services {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #151515;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5vh;
+}
+
+.services h2 {
+    color: #fff;
+}
+
+.services h3 {
+    color: #555;
+}
+
+.services p {
+    color: #777;
+}
+
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.service {
+    width: 300px;
+    margin: 20px;
+    padding: 15px;
+    background-color: #262626;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 2vh;
+}
+
+.service img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.service h3 {
+    color: #fff;
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.service p {
+    margin-top: 10px;
+    color: #636363;
 }
