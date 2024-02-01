@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,37 +16,60 @@
         text-decoration: underline !important;
     }
 </style>
+
 <body>
     <header>
 
     </header>
     <div class="contact">
         <h2>Entre em Contato</h2>
-        
+
         <p>Estamos aqui para responder às suas perguntas e ajudar no que você precisar. Entre em contato conosco:</p>
-    
+
         <div class="form-container">
-            <form action="#" method="post">
+            <form id="form-contato" action="#" method="post">
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" name="nome" required placeholder="Exemplo Nome">
-    
+
                 <label for="numero">Número:</label>
                 <input type="tel" id="numero" name="numero" required placeholder="+55 41 98888-8888">
-    
+
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required placeholder="email@exemplo.com">
-    
+
                 <label for="produto">Produto:</label>
                 <input type="text" id="produto" name="produto" required placeholder="Trator (Modelo)">
-    
+
                 <label for="mensagem">Mensagem:</label>
                 <textarea id="mensagem" name="mensagem" rows="4" placeholder="Digite sua duvida!"></textarea>
-    
+
                 <button type="submit">Enviar </button>
             </form>
         </div>
     </div>
-    
+
 </body>
 <script type="text/javascript" src="./js/headerAdd.js"></script>
+<script>
+    $("#form-contato").on('submit', function (e) {
+        e.preventDefault();
+        
+        let data = $("#nome").val() + "/" + $("#numero").val() + "/" + $("#email").val() + "/" + $("#produto").val() + "/" + $("#mensagem").val()
+
+        alert(data)
+
+        /* $.ajax({
+            type: 'POST',
+            url: link,
+            data: formdata,
+            processData: false,
+            contentType: false,
+            success: function (retorno){
+                alert (retorno)
+            }
+
+        }) */
+    })
+</script>
+
 </html>

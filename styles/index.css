@@ -53,6 +53,10 @@ header i:hover {
     transform: scale(1.2);
 }
 
+header i {
+    transition: 0.5s;
+}
+
 header .navbar {
     display: flex;
     gap: 3vw;
@@ -168,8 +172,8 @@ header .links a {
 
 .products {
     max-width: 1600px;
-    margin: 20px auto;
-    padding: 20px;
+    margin: 60px auto;
+    padding: 30px 40px;
     background-color: #151515;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 5vh;
@@ -201,12 +205,19 @@ header .links a {
     background-color: #262626;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 2vh;
+    transition: 0.5s all ease-in-out;
+    cursor: pointer;
+}
+
+.product:hover {
+    transform: scale(1.1)
 }
 
 .product img {
     width: 100%;
     height: auto;
     border-radius: 8px;
+    object-fit: cover;
 }
 
 .product h3 {
@@ -270,8 +281,8 @@ header .links a {
 
 .contact {
     max-width: 1500px;
-    margin: 20px auto;
-    padding: 20px;
+    margin: 60px auto;
+    padding: 30px 40px;
     background-color: #151515;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 5vh;
@@ -283,6 +294,7 @@ header .links a {
 
 .contact p {
     color: #777;
+    margin-bottom: 20px;
 }
 
 .form-container {
@@ -302,6 +314,7 @@ form textarea {
     border: 1px solid #fff;
     background-color: #151515;
     color: #fff;
+    margin: 10px 0px 20px 0px;
 }
 
 form button {
